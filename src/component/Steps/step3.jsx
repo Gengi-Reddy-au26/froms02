@@ -19,17 +19,15 @@ const Step3 = ({
     <Paper style={styles.steps}>
       <Box mt={2} mb={2}>
         {renderText({
-          label: "Commissions! Details",
+          label: "Thank for registration in our weshare account.Once your receive E-mail comfirmation that your account as been activated and approved.",
           type: "h6",
           color: "textPrimary",
-          align: "center",
+          align: "start",
         })}
       </Box>
-      {/* skill: "",
-      workExperence: "",
-      expectedSalary: "", */}
+     
 
-      <Grid container spacing={1} style={{ marginBottom: "16px" }}>
+      {/* <Grid container spacing={1} style={{ marginBottom: "16px" }}>
         <Grid item xs={12} sm={6}>
           {renderSelect({
             state,
@@ -43,57 +41,11 @@ const Step3 = ({
             ],
             onChange: handleChange,
           })}
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          {renderSelect({
-            state,
-            name: "Data to be add",
-            label: "Data to be add",
-            options: [
-              { key: "Less than 1 year", value: "Less than 1 year" },
-              { key: "More than 1 year", value: "More than 1 year" },
-              { key: "1 year", value: "1 year" },
-            ],
-            onChange: handleChange,
-          })}
-        </Grid>
-      </Grid>
+        </Grid> */}
+        
+        
 
-      <Grid container spacing={1} style={{ marginBottom: "16px" }}>
-        <Grid item xs={12} sm={6}>
-          {renderSelect({
-            state,
-            name: "jobType for commissions!",
-            label: "Choose Work Type",
-            options: [
-              { key: "Marketting", value: "Marketting" },
-              { key: "Official Work", value: "Official Work" },
-              { key: "Work from home", value: "Work from home" },
-            ],
-            onChange: handleChange,
-          })}
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          {renderInputField({
-            state,
-            name: "expectedcommissions!",
-            label: " Expected commissions!",
-            onChange: handleChange,
-          })}
-        </Grid>
-        <Box mt={2} mb={2}>
-        {renderText({
-          label: "Terms and Conditions",
-          type: "h6",
-          color: "textPrimary",
-          align: "center",
-        })}
-      </Box>
 
-<label><input type="checkbox" required /> I agree to and accept the Expedia Travel Agency Affiliate Agreement. We suggest you print it and keep a copy .</label>
-<label><input type="checkbox" required />I acknowledge I must provide banking and tax information to be eligible for commission payments. This information will be requested after acceptance to the programme.</label>
-    
-      </Grid>
 
       <Grid container component={Box} justify='flex-end' mt={2} p={2}>
         <Box ml={2}>

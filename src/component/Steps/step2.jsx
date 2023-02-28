@@ -213,7 +213,7 @@ const Step2 = ({ state, handleChange, handleNext, handlePrev }) => {
       <Box mt={2} mb={2}>
         {renderText({
           label: "Agency Information",
-          label:"How did you hear about the Expedia TAAP programme?*",
+          label:"How did you hear about the weshare programme?*",
           type: "h6",
           color: "textPrimary",
           align: "begin",
@@ -254,7 +254,7 @@ const Step2 = ({ state, handleChange, handleNext, handlePrev }) => {
         })}
       </Box>
 
-<label><input type="checkbox" required /> I agree to and accept the Expedia Travel Agency Affiliate Agreement. We suggest you print it and keep a copy for your records.</label>
+<label><input type="checkbox" required /> I agree to and accept the Weshare Travel Agency Affiliate Agreement. We suggest you print it and keep a copy for your records.</label>
 <label><input type="checkbox" required />I acknowledge I must provide banking and tax information to be eligible for commission payments. This information will be requested after acceptance to the programme.</label>
     
 
