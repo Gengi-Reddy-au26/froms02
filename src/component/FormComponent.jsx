@@ -21,19 +21,25 @@ class FormComponent extends Component {
     data: {
       firstName: "",
       lastName: "",
-      gender: "",
-      phone: "",
       email: "",
+      phone: "",
+      password: "",
+      Renterpassword: "",
 
-      highestDegree: "",
-      issuedBy: "",
-      yearOfPassing: "",
-      jobType: "",
+      Agencytradename: "",
+      address: "",
+      Companyname: "",
+      cityandtown: "",
 
-      skill: "",
-      jobApplyFor: "",
-      workExperence: "",
-      expectedSalary: "",
+      zipcode: "",
+      state: "",
+      Telephonenumber: "",
+      Faxnumber: "",
+      LocalAssociationNumber: "",
+      RegisteredCompanyNumber: "",
+      InternetAddressWebsite: "",
+
+
     },
     errors: {},
     steps: [

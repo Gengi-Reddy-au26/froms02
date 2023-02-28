@@ -162,14 +162,7 @@ const Step2 = ({ state, handleChange, handleNext, handlePrev }) => {
         </Grid>
       </Grid>
       <Grid container spacing={1} style={{ marginBottom: "16px" }}>
-        {/* <Grid item xs={12} sm={6}>
-          {renderInputField({
-            state,
-            name: "IATA/ARC/CLIA/TrueID Code*",
-            label: "IATA/ARC/CLIA/TrueID Code*",
-            onChange: handleChange,
-          })}
-        </Grid> */}
+       
        
 
 <Grid item xs={12} sm={6}>
@@ -209,56 +202,7 @@ const Step2 = ({ state, handleChange, handleNext, handlePrev }) => {
 
 
 
-      {/* <Paper style={styles.steps}>
-      <Box mt={2} mb={2}>
-        {renderText({
-          label: "Agency Information",
-          label:"How did you hear about the weshare programme?*",
-          type: "h6",
-          color: "textPrimary",
-          align: "begin",
-        })}
-      </Box>
-
-      <Grid container spacing={1} style={{ marginBottom: "16px" }}>
-        <Grid item xs={12} sm={6}>
-          {renderSelect({
-            state,
-            name: "Agency Information,",
-            label: "Select",
-            options: [
-              {key:"Select",value:"Select"},
-              { key: "FAX", value: "FAX" },
-              { key: "social media", value: "social media" },
-              { key: "Telesale", value: "Telesale" },
-              { key: "Frineds", value: "Friends" },
-              { key: "Others", value: "Others" },
-            ],
-            onChange: handleChange,
-          })}
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          {renderInputField({
-            state,
-            name: "Promo Code",
-            label: "Promo Code",
-            onChange: handleChange,
-          })}
-        </Grid>
-        <Box mt={2} mb={2}>
-        {renderText({
-          label: "Terms and Conditions",
-          type: "h6",
-          color: "textPrimary",
-          align: "center",
-        })}
-      </Box>
-
-<label><input type="checkbox" required /> I agree to and accept the Weshare Travel Agency Affiliate Agreement. We suggest you print it and keep a copy for your records.</label>
-<label><input type="checkbox" required />I acknowledge I must provide banking and tax information to be eligible for commission payments. This information will be requested after acceptance to the programme.</label>
-    
-
-      </Grid> */}
+      ``
 
       
         

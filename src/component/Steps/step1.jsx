@@ -84,18 +84,7 @@ const Step1 = ({ state, handleChange, handleNext }) => {
         </Grid>
       </Grid>
       <Grid container spacing={1} style={{ marginBottom: "16px" }}>
-        {/* <Grid item xs={12}>
-          {renderSelect({
-            state,
-            name: "gender",
-            label: "Gender",
-            options: [
-              { key: "Male", value: "male" },
-              { key: "Female", value: "female" },
-            ],
-            onChange: handleChange,
-          })}
-        </Grid> */}
+        
         <Box mt={2} mb={2}>
         {renderText({
           label: "Terms and Conditions",
