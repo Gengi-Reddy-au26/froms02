@@ -162,14 +162,14 @@ const Step2 = ({ state, handleChange, handleNext, handlePrev }) => {
         </Grid>
       </Grid>
       <Grid container spacing={1} style={{ marginBottom: "16px" }}>
-        <Grid item xs={12} sm={6}>
+        {/* <Grid item xs={12} sm={6}>
           {renderInputField({
             state,
             name: "IATA/ARC/CLIA/TrueID Code*",
             label: "IATA/ARC/CLIA/TrueID Code*",
             onChange: handleChange,
           })}
-        </Grid>
+        </Grid> */}
        
 
 <Grid item xs={12} sm={6}>
@@ -209,7 +209,7 @@ const Step2 = ({ state, handleChange, handleNext, handlePrev }) => {
 
 
 
-      <Paper style={styles.steps}>
+      {/* <Paper style={styles.steps}>
       <Box mt={2} mb={2}>
         {renderText({
           label: "Agency Information",
@@ -258,7 +258,7 @@ const Step2 = ({ state, handleChange, handleNext, handlePrev }) => {
 <label><input type="checkbox" required />I acknowledge I must provide banking and tax information to be eligible for commission payments. This information will be requested after acceptance to the programme.</label>
     
 
-      </Grid>
+      </Grid> */}
 
       
         
@@ -286,7 +286,7 @@ const Step2 = ({ state, handleChange, handleNext, handlePrev }) => {
         <Box ml={2}>{renderButton({ label: "Next", onClick: handleNext })}</Box>
       </Grid>
     </Paper>
-    </Paper>
+   
   );
 };
 
