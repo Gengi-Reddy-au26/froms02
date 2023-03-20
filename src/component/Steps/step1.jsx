@@ -13,34 +13,34 @@ const Step1 = ({ state, handleChange, handleNext }) => {
     <Paper style={styles.steps}>
       <Box mt={2} mb={2}>
         {renderText({
-          label: "Agency Manager Information",
-          type: "h6",
+          label: "General",
+          type: "h4",
           color: "textPrimary",
-          align: "center",
+          align: "start",
         })}
       </Box>
 
-      <Grid container spacing={1} style={{ marginBottom: "16px" }}>
+      <Grid container spacing={1} style={{ marginBottom: "45px" }}>
         <Grid item xs={12} sm={6}>
           {renderInputField({
             state,
-            name: "firstName",
-            label: "First Name",
+            name: "Title",
+            label: "Title",
             onChange: handleChange,
           })}
         </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={60}>
           {renderInputField({
             state,
-            name: "lastName",
-            label: "Last Name",
+            name: "Description",
+            label: "Description",
             onChange: handleChange,
           })}
         </Grid>
       </Grid>
 
 
-      <Grid container spacing={1} style={{ marginBottom: "16px" }}>
+      {/* <Grid container spacing={1} style={{ marginBottom: "16px" }}>
       <Grid item xs={12} sm={6}>
           {renderInputField({
             state,
@@ -95,7 +95,7 @@ const Step1 = ({ state, handleChange, handleNext }) => {
       </Box>
         <label><input type="checkbox" required /> I agree to and accept the Weshare Travel Agency Affiliate Agreement. We suggest you print it and keep a copy.!</label>
     
-      </Grid>
+      </Grid> */}
 
       <Grid container component={Box} justify='flex-end' mt={2} p={2}>
         {renderButton({ label: "Next", onClick: handleNext })}

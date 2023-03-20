@@ -12,6 +12,9 @@ import {
 import Step1 from "./Steps/step1";
 import Step2 from "./Steps/step2";
 import Step3 from "./Steps/step3";
+import Step4 from "./Steps/step4";
+import Step5 from "./Steps/step5";
+
 import FinalStep from "./Steps/FinalStep";
 import { renderText } from "./common/DisplayComponent";
 import { styles } from "./common/styles";
@@ -19,33 +22,35 @@ import { styles } from "./common/styles";
 class FormComponent extends Component {
   state = {
     data: {
-      firstName: "",
-      lastName: "",
-      email: "",
-      phone: "",
-      password: "",
-      Renterpassword: "",
+      // firstName: "",
+      // lastName: "",
+      // email: "",
+      // phone: "",
+      // password: "",
+      // Renterpassword: "",
 
-      Agencytradename: "",
-      address: "",
-      Companyname: "",
-      cityandtown: "",
+      // Agencytradename: "",
+      // address: "",
+      // Companyname: "",
+      // cityandtown: "",
 
-      zipcode: "",
-      state: "",
-      Telephonenumber: "",
-      Faxnumber: "",
-      LocalAssociationNumber: "",
-      RegisteredCompanyNumber: "",
-      InternetAddressWebsite: "",
+      // zipcode: "",
+      // state: "",
+      // Telephonenumber: "",
+      // Faxnumber: "",
+      // LocalAssociationNumber: "",
+      // RegisteredCompanyNumber: "",
+      // InternetAddressWebsite: "",
 
 
     },
     errors: {},
     steps: [
-      { label: "Step 1: Share your Agency Manager Information" },
-      { label: "Step 2: Share your Travel Agency Information" },
-      { label: "Step 3: Start earning commissions!" },
+      { label: "Step 1: Submit New Experience" },
+      { label: "Step 2: Submit New Experience" },
+      { label: "Step 3: Submit New Experience" },
+      { label: "Step 4: Submit New Experience" },
+      { label: "Step 5: Submit New Experience" },
     ],
     stepCount: 0,
   };
@@ -60,7 +65,7 @@ class FormComponent extends Component {
     const handleOnChange = ({ target }) => {
       const { data, errors } = this.state;
 
-      target.value.length <= 3
+      target.value.length <= 5
         ? (errors[target.name] = `${target.name} have at least 3 letter`)
         : (errors[target.name] = "");
 
@@ -109,7 +114,28 @@ class FormComponent extends Component {
               handleSubmit={handleSubmit}
             />
           );
-        case 3:
+          case 3:
+          return (
+            <Step4
+              state={this.state}
+              handleChange={handleOnChange}
+              handleNext={handleNextStep}
+              handlePrev={handleBackStep}
+              handleSubmit={handleSubmit}
+            />
+          );
+
+          case 4:
+          return (
+            <Step5
+              state={this.state}
+              handleChange={handleOnChange}
+              handleNext={handleNextStep}
+              handlePrev={handleBackStep}
+              handleSubmit={handleSubmit}
+            />
+          );
+        case 5:
           return <FinalStep data={this.state.data} />;
         default:
           return (
@@ -131,7 +157,7 @@ class FormComponent extends Component {
                 {renderText({
                   type: "h6",
                   color: "primary",
-                  label: "Register your travel agency in 3 easy steps!",
+                  label: "Submit New Experience",
                   align: "center",
                 })}
               </Box>

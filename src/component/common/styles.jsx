@@ -11,7 +11,7 @@ export const styles = {
 
   form: {
     padding: "10px",
-    minHeight: "350px",
+    minHeight: "50px",
     height: "auto",
   },
   formTitle: {
